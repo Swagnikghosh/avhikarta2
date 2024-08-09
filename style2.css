@@ -1,0 +1,664 @@
+
+:root {
+    --primary-color: #3a5371;
+    --secondary-color: #E1AD01;
+    --accent-color: #034B03;
+    --text-color: #000;
+    --text-color-light: #fff;
+    --background-color: #f5f5f5a8;
+    --hover-color: #333;
+    --border-color: #dedede;
+}
+
+
+.services h2{
+    margin-bottom: 5rem;
+}
+.services{
+    align-items: center;
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+}
+.service-container{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: -20px;
+    /* width:200px; */
+   
+}
+.service-container .services-box{
+    flex: 1 1 20rem;
+    background: var( --secondary-color) ;
+    padding: 3rem 2rem 4rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: 0.5s ease;
+    height: 550px;
+    
+}
+.service-container .services-box ul li{
+    text-align: center;
+    font-size: 15px;
+    list-style: none;
+    
+}
+.service-container .services-box:hover{
+   border-color: var(--main-color);
+   transform: scale(1.03);
+   
+}
+.services-box i{
+    font-size: 4rem;
+    /* color: var(--main-color); */
+}
+.services-box h3{
+    font-size: 1.7rem;
+}
+.services-box p{
+    font-size: 1rem;
+    margin: 1rem;
+}
+.services {
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img1{
+    height: 350px;
+    width: 550px;
+    margin-top: 40px;
+}
+h3{
+    font-weight: bolder;
+}
+.services-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Adjust the width to your preference */
+    margin: 20px; /* Add some margin around the service boxes */
+    padding: 20px; /* Add padding inside the service boxes */
+    border: 1px solid #ccc; /* Add a border to the service boxes */
+    border-radius: 10px; /* Add rounded corners to the service boxes */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Add the more visible box shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+.readmore{
+    margin: 20px;
+    font-size: smaller;
+}
+
+.round{
+   /*  */
+   
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   /* margin-left: 100px; */
+   
+}
+.first1{
+    background-color:  var( --accent-color)!important;
+    color: white;
+}
+.first2{
+    background-color: var(--secondary-color) !important;
+    color: var( --accent-color) !important;
+}
+.second2{
+    background-color:  var( --accent-color) !important;
+    color: var(--secondary-color);
+}
+.second1{
+    background-color: var(--secondary-color)!important;
+    color: black !important;
+}
+.third1{
+    background-color:white !important;
+    color:  var( --accent-color);
+}
+.third2{
+    background-color: var(--secondary-color) !important;
+    color:  var( --accent-color) !important;
+}
+.round {
+    /* background-color: #FEF250 !important; */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: #FEF250 !important; Ensure the icon or text inside is visible */
+    font-size: 40px; /* Adjust the font size if necessary */
+    margin-bottom: 20px; /* Add some margin below the circle */
+}
+
+
+
+/* about */
+.about {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Adjust gap as needed for spacing between image and content */
+    /* margin-right: 90px; */
+    margin-top: 60px ;
+    margin-right: 40px;
+}
+
+.about .about-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 45%; /* Make the image container take half of the page */
+}
+
+.about .about-img .aboutHero {
+    width: 100%; /* Make the image take the full width of its container */
+    max-width: 500px; /* Optional: Set a max width to prevent it from being too large */
+    height: 500px; /* Maintain aspect ratio */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 20px solid white;
+    position: absolute; 
+    margin-left: 50px;/* Ensures the image covers the circle without distortion */
+}
+
+.about-content {
+    flex-basis: 50%; /* Make the text container take half of the page */
+    padding: 3rem 0;
+}
+
+.about-content h2 {
+    color: var(--main-color);
+}
+
+.about-content h3 {
+    font-size: 2.1rem;
+}
+
+.about-content p {
+    color: black;
+}
+
+.text-box p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.about-btn {
+    margin: .8rem 0;
+}
+
+.about-btn button,
+.cvContent a {
+    background: var(--gradient-white-bg2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-right: .5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.about-btn button.active {
+    background: var(--gradient-color-bg);
+    color: #fff;
+}
+
+.text-box {
+    margin: .8rem 0;
+}
+
+.content-btn > .content:not(:first-child) {
+    display: none;
+}
+
+.about-btn button:hover {
+    box-shadow: var(--hover-box-shadow);
+}
+
+.about-content {
+    flex: 2;
+    padding: 20px;
+    /* width: 300px !important; */
+}
+
+.about-content .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+.about-content h3 {
+    font-size: 22px;
+    /* margin: 20px 0; */
+}
+
+/* Style for the slider container */
+.slider-container {
+    margin-top: 20px;
+    padding-bottom: -10px !important;
+}
+
+.slider {
+    
+}
+
+.slider label {
+    display: block;
+    font-size: 18px;
+   
+}
+
+.slider input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: var( --accent-color);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 10px;
+}
+
+.slider input[type="range"]:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #b0b9b0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #f5fef6;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider-value {
+    font-size: 16px;
+    margin-top: 5px;
+    display: block;
+    text-align: right;
+    color: #333;
+}
+.bold{
+    font-weight: 500;
+    font-size: 20px;
+}
+.heading{
+    font-size: 40px !important;
+}
+.slider1{
+    margin: 0px  !important;
+}
+.overlap{
+    background-color: var( --secondary-color);
+    border-radius: 50%;
+    width: 100%; /* Make the image take the full width of its container */
+    max-width: 800px; /* Optional: Set a max width to prevent it from being too large */
+    height: 500px; /* Maintain aspect ratio */
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: -2;
+    margin-bottom: 40px;
+    margin-right: 80px;
+
+
+}
+
+/* Responsive adjustments for the .about section */
+@media (max-width: 768px) {
+    .about {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15vh; /* relative unit */
+      align-items: center;
+      justify-content: center;
+      margin-right: 0px;
+      margin-right: 20px;
+    }
+  
+    .about .about-img {
+      position: relative;
+      display: flex;
+      height: 300px;
+      width: 300px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 30vh; /* relative unit */
+      width: 80%; /* adjust the image width */
+    }
+  
+    .about .about-img .aboutHero {
+      display: flex;
+      flex-direction: row;
+      width: 300px;
+      height:300px; /* relative unit */
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2vw solid white; /* adjust the border size */
+      position: absolute;
+      margin-left: 35px;
+    }
+  
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%; /* adjust the content width */
+      justify-content: left;
+      margin: 0px;
+      margin-top: 1vh;
+      margin-left: 25px;
+      /* relative unit */
+    }
+  
+    
+    .overlap{
+        background-color: var( --secondary-color);
+        border-radius: 50%;
+        width: 100%; /* Make the image take the full width of its container */
+        max-width: 300px; /* Optional: Set a max width to prevent it from being too large */
+        height: 300px; /* Maintain aspect ratio */
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        z-index: -2;
+        margin-bottom: 40px;
+        margin-right: 20px;
+    
+    
+    }
+    .about-content p {
+      font-size: 15px; /* increase font size */
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .about-content .heading{
+        font-size: 27px !important;
+    }
+    .about-content h3 {
+      font-size: 15px; /* increase font size */
+      margin-bottom: 20px;
+    }
+    
+  }
+/* Responsive adjustments for the .about section */
+@media (max-width: 375px) {
+    .about {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15vh; /* relative unit */
+      align-items: center;
+      justify-content: center;
+      margin-right: 0px !important;
+    }
+  
+    .about .about-img {
+      position: relative;
+      display: flex;
+      height: 300px;
+      width: 300px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 30vh; /* relative unit */
+      width: 100%; /* adjust the image width */
+    }
+  
+    .about .about-img .aboutHero {
+      display: flex;
+      flex-direction: row;
+      width: 300px;
+      height:300px; /* relative unit */
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2vw solid white; /* adjust the border size */
+      position: absolute;
+      margin-left: 35px;
+    }
+  
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      /* adjust the content width */
+      justify-content: left;
+      margin: 0px;
+      width: 100%;
+      margin-top: 1vh;
+      margin-left: 25px;
+      width: 400px;
+      margin-right: 20px;
+      /* relative unit */
+    }
+  
+    
+    .overlap{
+        background-color: var( --secondary-color);
+        border-radius: 50%;
+        width: 100%; /* Make the image take the full width of its container */
+        max-width: 300px; /* Optional: Set a max width to prevent it from being too large */
+        height: 300px; /* Maintain aspect ratio */
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        z-index: -2;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    
+    
+    }
+    .about-content p {
+      font-size: 15px; /* increase font size */
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .about-content .heading{
+        font-size: 20px !important;
+    }
+    .about-content h3 {
+      font-size: 15px; /* increase font size */
+      margin-bottom: 20px;
+    }
+    .service-container{
+        margin-top: 130px;
+    }
+    .service-container .services-box{
+        flex: 1 1 20rem;
+        background: var(--second-bg-color);
+        padding: 3rem 2rem 4rem;
+        border-radius: 1rem;
+        text-align: center;
+        border: .2rem solid var(--bg-color);
+        transition: 0.5s ease;
+        height: 350px;
+        
+    }
+    .service-container .services-box ul li{
+        text-align: center;
+        font-size: 5px;
+        list-style: none;
+        
+    }
+
+    .services-box round{
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin-bottom: 0px;
+    }
+    .services-box i{
+        height: 87px;
+        width: 137px;
+        margin-top: 24px;
+    }
+    .services-box .round{
+        margin-top: -30px;
+    }
+    .services-box p{
+        font-size: 12px;
+    }
+    .services-box h3{
+        font-size: 25px;
+    }
+    .services-box{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .readmore{
+        display: none;
+    }
+    .carousel-item{
+        height: 500px;
+    }
+    
+    #carousel-section{
+        height: 300px !important;
+    }
+    .slider-contant h5{
+        font-size: 25px !important;
+    }
+    #carousel-section .carousel-inner .carousel-item .slider-img1 {
+    background: url(images/gcover4.png);
+    width: 100%;
+    height: 250px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 0.5;
+    position: relative;
+}
+
+#carousel-section .carousel-inner .carousel-item .slider-img2 {
+    background-image: url(images/pic2.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 0.5;
+}
+
+#carousel-section .carousel-inner .carousel-item .slider-img3 {
+    background-image: url(images/pic3.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    z-index: 0.5;
+}
+
+#carousel-section .carousel-inner .carousel-item .slider-img4 {
+    
+    background-image: url(images/pic4.jpg);
+    width: 100%;
+    height: 250px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-height: 600px;
+}
+#carousel-section{
+    height: 250px !important;
+}
+.top-navbar-2{
+    display: none;
+}
+.black{
+    color: var( --accent-color) !important;
+}
+.img1{
+    margin-right: 10px !important;
+    width:100%;
+    height: 80%;
+    margin-bottom: 30px;
+}
+#lic-service {
+    background-color: var(--background-color);
+    width: 100%;
+    height:auto;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    /* display: none ; */
+    margin-top: -200px !important;
+    color: red !important;
+}
+.cen{
+    width: 110px !important;
+    height: 30px;
+    /* font-size: xx-small; */
+}
+.cen div{
+    margin-top: -4px;
+    font-size: 11px;
+    width: 110px !important;
+    height: 30px;
+    margin-left: -25px;
+}
+.video-wrapper {
+    position: relative;
+    padding-bottom: 78%; /* This is the aspect ratio (455 / 580 * 100) */
+    height: 0;
+    overflow: hidden;
+    max-width: 10%; /* Ensure the video wrapper does not exceed its container */
+    margin: 0 auto; 
+    width: 3px !important;/* Center the video horizontally */
+}
+
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px !important;
+    height: 300px !important;
+}
+}

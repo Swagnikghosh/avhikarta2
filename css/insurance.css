@@ -93,7 +93,27 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+.service-card .card-mutual
+{	
+	background: url("../img/mutualfunds.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.service-card .card-otherinvestment
+{	
+	background: url("../img/otherinvestments.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.service-card .card-others
+{	
+	background: url("../img/others.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .service-card .service-details
 {
 	padding: 1.5rem;

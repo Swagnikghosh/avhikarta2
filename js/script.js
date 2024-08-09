@@ -42,3 +42,10 @@
 		  }
 		});
 		// ------------------------ Responsive menu ----------------
+
+		let logo=document.querySelector(".brand img");
+		logo.src="img/abhikarta-logo.png"
+		let title=document.querySelector("title");
+		title.textContent="Abhikarta | Be sucure for future!"
+		let footer=document.querySelector(".footer-container p");
+		footer.textContent="© 2024 Swagnik. All Rights Reserved";

@@ -49,3 +49,6 @@
 		title.textContent="Abhikarta | Be sucure for future!"
 		let footer=document.querySelector(".footer-container p");
 		footer.textContent="© 2024 Swagnik. All Rights Reserved";
+
+		let li=document.querySelectorAll(".nav-list li");
+		li[3].querySelector('a').setAttribute('href', 'gallery.html');

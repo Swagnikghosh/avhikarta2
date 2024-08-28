@@ -916,7 +916,7 @@ footer
 @media(max-width: 400px){
 	.about-img {
 		margin-left: 0px;
-		height: 400px;
+		height: 350px;
 	}
 	.hero-heading{
 		font-size: 40px !important;

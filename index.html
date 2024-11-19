@@ -18,7 +18,27 @@
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
+	<style>
+		.img-slide {
+			position: absolute;
+			top: 0;
+			left: 100%; /* Start off-screen to the right */
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: all 1s ease-in-out; /* Smooth sliding effect */
+		  }
+	  
+		  .img-slide.active {
+			left: 0; /* Bring the active image into view */
+			opacity: 1; /* Make the active image visible */
+		  }
+	  
+		  .img-slide.prev {
+			left: -100%; /* Move the previous image off-screen to the left */
+			opacity: 0; /* Hide the previous image */
+		  }
+	</style>
 	<!-- Jquery CDN link -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
@@ -110,10 +130,11 @@
     </header>
 
     <section class="home">
-        <img decoding="async" class="img-slide active" src="img/slider1.png" ></img>
-        <img decoding="async" class="img-slide" src="img/slider2.png" ></img>
-        <img decoding="async" class="img-slide" src="img/slider3.png" ></img>
-        <img decoding="async" class="img-slide" src="img/slider4.png" ></img>
+		<img decoding="async" class="img-slide active" src="img/slider1.png" alt="Image 1">
+  <img decoding="async" class="img-slide" src="img/slider2.png" alt="Image 2">
+  <img decoding="async" class="img-slide" src="img/slider3.png" alt="Image 3">
+  <img decoding="async" class="img-slide" src="img/slider4.png" alt="Image 4">
+
         <!-- <img decoding="async" class="img-slide" src="img/gallery2.jpg" ></img> -->
         <!-- <div class="content active">
             <h1>USSF-44.<br><span>Mission</span></h1>
@@ -495,24 +516,29 @@
 
 	<script src="slider.js"></script>
 	<script>
-		// ------------------------ Scroll to top button --------------------
-		$(document).ready(function(){
-		  $(window).scroll(function(){
-		    if($(this).scrollTop() > 40)
-		    {
-		      $('#topBtn').fadeIn();
-		    }
-		    else
-		    {
-		      $('#topBtn').fadeOut();
-		    }
-		  });
-		  
-		   $("#topBtn").click(function(){
-		      $('html, body').animate({scrollTop: 0},800);
-		   });             
+		document.addEventListener('DOMContentLoaded', () => {
+		  const slides = document.querySelectorAll('.img-slide');
+		  let currentSlide = 0;
+	
+		  function changeSlide() {
+			// Remove active and prev classes
+			slides.forEach((slide, index) => {
+			  slide.classList.remove('active', 'prev');
+			  if (index === currentSlide) {
+				slide.classList.add('prev'); // Mark the previous slide
+			  }
+			});
+	
+			// Update current slide
+			currentSlide = (currentSlide + 1) % slides.length;
+	
+			// Add active class to the new current slide
+			slides[currentSlide].classList.add('active');
+		  }
+	
+		  // Change slide every 1 second
+		  setInterval(changeSlide, 5000);
 		});
-		// ------------------------ Scroll to top button --------------------
-	</script>
+	  </script>
 </body>
 </html>
